@@ -8,7 +8,12 @@
 //     .then((data) => console.log(data))
 //     .catch((error) => console.error(error));
 
-fetch("https://tools.payonstories.com/api/pc/item?id=4211&name=4211")
+fetch(
+    "https://tools.payonstories.com/api/pc/item?id=4211&name=4211",
+    {
+        mode: "no-cors",
+    }
+)
     .then(function (response) {
         // The API call was successful!
         return response.json();
