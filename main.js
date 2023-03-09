@@ -9,10 +9,7 @@
 //     .catch((error) => console.error(error));
 
 fetch(
-    "http://tools.payonstories.com/api/pc/item?id=4211&name=4211",
-    {
-        mode: "no-cors",
-    }
+    "https://tools.payonstories.com/api/pc/item?id=4211&name=4211"
 )
     .then(function (response) {
         // The API call was successful!
